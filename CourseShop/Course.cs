@@ -16,6 +16,6 @@ namespace CourseShop
         public ICollection<CourseTeachers> CourseTeachers { get; set; }
         public ICollection<Tag> Tags { get; set; }
         public ICollection<Comment> Comments { get; set; }
-        public ICollection<Dicount> Dicounts { get; set; }
+        public Dicount Dicounts { get; set; }
     }
 }

@@ -1,0 +1,15 @@
+C:\Users\HP\Desktop\dot-net-core\samples\CourseShop\CourseShop\bin\Debug\net6.0\CourseShopEntities.exe
+C:\Users\HP\Desktop\dot-net-core\samples\CourseShop\CourseShop\bin\Debug\net6.0\CourseShopEntities.deps.json
+C:\Users\HP\Desktop\dot-net-core\samples\CourseShop\CourseShop\bin\Debug\net6.0\CourseShopEntities.runtimeconfig.json
+C:\Users\HP\Desktop\dot-net-core\samples\CourseShop\CourseShop\bin\Debug\net6.0\CourseShopEntities.dll
+C:\Users\HP\Desktop\dot-net-core\samples\CourseShop\CourseShop\bin\Debug\net6.0\ref\CourseShopEntities.dll
+C:\Users\HP\Desktop\dot-net-core\samples\CourseShop\CourseShop\bin\Debug\net6.0\CourseShopEntities.pdb
+C:\Users\HP\Desktop\dot-net-core\samples\CourseShop\CourseShop\obj\Debug\net6.0\CourseShopEntities.csproj.AssemblyReference.cache
+C:\Users\HP\Desktop\dot-net-core\samples\CourseShop\CourseShop\obj\Debug\net6.0\CourseShopEntities.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\HP\Desktop\dot-net-core\samples\CourseShop\CourseShop\obj\Debug\net6.0\CourseShopEntities.AssemblyInfoInputs.cache
+C:\Users\HP\Desktop\dot-net-core\samples\CourseShop\CourseShop\obj\Debug\net6.0\CourseShopEntities.AssemblyInfo.cs
+C:\Users\HP\Desktop\dot-net-core\samples\CourseShop\CourseShop\obj\Debug\net6.0\CourseShopEntities.csproj.CoreCompileInputs.cache
+C:\Users\HP\Desktop\dot-net-core\samples\CourseShop\CourseShop\obj\Debug\net6.0\CourseShopEntities.dll
+C:\Users\HP\Desktop\dot-net-core\samples\CourseShop\CourseShop\obj\Debug\net6.0\ref\CourseShopEntities.dll
+C:\Users\HP\Desktop\dot-net-core\samples\CourseShop\CourseShop\obj\Debug\net6.0\CourseShopEntities.pdb
+C:\Users\HP\Desktop\dot-net-core\samples\CourseShop\CourseShop\obj\Debug\net6.0\CourseShopEntities.genruntimeconfig.cache
