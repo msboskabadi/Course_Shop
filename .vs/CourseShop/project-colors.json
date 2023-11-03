@@ -1,0 +1,16 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "a330883a-83f7-4a74-a7c8-d3940bc28d42": {
+      "ProjectGuid": "a330883a-83f7-4a74-a7c8-d3940bc28d42",
+      "DisplayName": "CourseShop",
+      "ColorIndex": 0
+    },
+    "55b9b91c-ed78-4fa5-9e0a-a2c4cc0351ba": {
+      "ProjectGuid": "55b9b91c-ed78-4fa5-9e0a-a2c4cc0351ba",
+      "DisplayName": "DataAccessLayer",
+      "ColorIndex": 1
+    }
+  },
+  "NextColorIndex": 2
+}
