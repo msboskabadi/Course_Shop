@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "h40yY6uYnEwJfXFUyJeIxg+bnKXfGq2iY0r9ElH+rUudx9BiaXuHMJgv5NMQiBS8emq0DmQ0fSaye5JZx8uzaA==",
+  "dgSpecHash": "b/uGODxlFmWm5ix0Ghvn5BLiGgnxMP6m1tilN6djYIna7etw2XNS3N/IszBXsckElydnFcvyIdORxyoawmPJrw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\HP\\Desktop\\dot-net-core\\samples\\CourseShop\\CourseShop\\CourseShop.csproj",
+  "projectFilePath": "C:\\Users\\HP\\Desktop\\dot-net-core\\samples\\CourseShop\\CourseShop\\CourseShopEntities.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

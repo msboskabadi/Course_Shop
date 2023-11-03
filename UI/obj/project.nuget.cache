@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "UnfqFEnakTDG2e5qhrJVzdM7r+PdR4vhN5sk9goN3TIVvot2sHhI+8cDEHksAmZRYcYMyvRU0U44DQXx1Ks6qA==",
+  "dgSpecHash": "Shatd2KE9VpV4b3ApN+Yd2zYCgTIMCIjCP9hQZVcDevEO/sGp4En4dZU0h4UrQDKHwd9G2rf9ItJ94rj/Arpxg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\HP\\Desktop\\dot-net-core\\samples\\CourseShop\\DataAccessLayer\\DataAccessLayer.csproj",
+  "projectFilePath": "C:\\Users\\HP\\Desktop\\dot-net-core\\samples\\CourseShop\\UI\\UI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\HP\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\HP\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",

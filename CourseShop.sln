@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CourseShop", "CourseShop\CourseShop.csproj", "{A330883A-83F7-4A74-A7C8-D3940BC28D42}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CourseShopEntities", "CourseShop\CourseShopEntities.csproj", "{A330883A-83F7-4A74-A7C8-D3940BC28D42}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccessLayer", "DataAccessLayer\DataAccessLayer.csproj", "{55B9B91C-ED78-4FA5-9E0A-A2C4CC0351BA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataAccessLayer", "DataAccessLayer\DataAccessLayer.csproj", "{55B9B91C-ED78-4FA5-9E0A-A2C4CC0351BA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UI", "UI\UI.csproj", "{5231315F-8CEB-4652-8D99-18FE9AF7327F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{55B9B91C-ED78-4FA5-9E0A-A2C4CC0351BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{55B9B91C-ED78-4FA5-9E0A-A2C4CC0351BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{55B9B91C-ED78-4FA5-9E0A-A2C4CC0351BA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5231315F-8CEB-4652-8D99-18FE9AF7327F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5231315F-8CEB-4652-8D99-18FE9AF7327F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5231315F-8CEB-4652-8D99-18FE9AF7327F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5231315F-8CEB-4652-8D99-18FE9AF7327F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

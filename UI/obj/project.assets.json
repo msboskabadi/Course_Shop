@@ -795,6 +795,20 @@
         "runtime": {
           "bin/placeholder/CourseShopEntities.dll": {}
         }
+      },
+      "DataAccessLayer/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "CourseShopEntities": "1.0.0",
+          "Microsoft.EntityFrameworkCore.SqlServer": "7.0.13"
+        },
+        "compile": {
+          "bin/placeholder/DataAccessLayer.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DataAccessLayer.dll": {}
+        }
       }
     }
   },
@@ -2449,12 +2463,17 @@
       "type": "project",
       "path": "../CourseShop/CourseShopEntities.csproj",
       "msbuildProject": "../CourseShop/CourseShopEntities.csproj"
+    },
+    "DataAccessLayer/1.0.0": {
+      "type": "project",
+      "path": "../DataAccessLayer/DataAccessLayer.csproj",
+      "msbuildProject": "../DataAccessLayer/DataAccessLayer.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
       "CourseShopEntities >= 1.0.0",
-      "Microsoft.EntityFrameworkCore.SqlServer >= 7.0.13"
+      "DataAccessLayer >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -2464,11 +2483,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\HP\\Desktop\\dot-net-core\\samples\\CourseShop\\DataAccessLayer\\DataAccessLayer.csproj",
-      "projectName": "DataAccessLayer",
-      "projectPath": "C:\\Users\\HP\\Desktop\\dot-net-core\\samples\\CourseShop\\DataAccessLayer\\DataAccessLayer.csproj",
+      "projectUniqueName": "C:\\Users\\HP\\Desktop\\dot-net-core\\samples\\CourseShop\\UI\\UI.csproj",
+      "projectName": "UI",
+      "projectPath": "C:\\Users\\HP\\Desktop\\dot-net-core\\samples\\CourseShop\\UI\\UI.csproj",
       "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\HP\\Desktop\\dot-net-core\\samples\\CourseShop\\DataAccessLayer\\obj\\",
+      "outputPath": "C:\\Users\\HP\\Desktop\\dot-net-core\\samples\\CourseShop\\UI\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -2491,6 +2510,9 @@
           "projectReferences": {
             "C:\\Users\\HP\\Desktop\\dot-net-core\\samples\\CourseShop\\CourseShop\\CourseShopEntities.csproj": {
               "projectPath": "C:\\Users\\HP\\Desktop\\dot-net-core\\samples\\CourseShop\\CourseShop\\CourseShopEntities.csproj"
+            },
+            "C:\\Users\\HP\\Desktop\\dot-net-core\\samples\\CourseShop\\DataAccessLayer\\DataAccessLayer.csproj": {
+              "projectPath": "C:\\Users\\HP\\Desktop\\dot-net-core\\samples\\CourseShop\\DataAccessLayer\\DataAccessLayer.csproj"
             }
           }
         }
@@ -2504,12 +2526,6 @@
     "frameworks": {
       "net6.0": {
         "targetAlias": "net6.0",
-        "dependencies": {
-          "Microsoft.EntityFrameworkCore.SqlServer": {
-            "target": "Package",
-            "version": "[7.0.13, )"
-          }
-        },
         "imports": [
           "net461",
           "net462",

@@ -14,9 +14,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\HP\\Desktop\\dot-net-core\\samples\\CourseShop\\CourseShop\\CourseShop.csproj",
-      "projectName": "CourseShop",
-      "projectPath": "C:\\Users\\HP\\Desktop\\dot-net-core\\samples\\CourseShop\\CourseShop\\CourseShop.csproj",
+      "projectUniqueName": "C:\\Users\\HP\\Desktop\\dot-net-core\\samples\\CourseShop\\CourseShop\\CourseShopEntities.csproj",
+      "projectName": "CourseShopEntities",
+      "projectPath": "C:\\Users\\HP\\Desktop\\dot-net-core\\samples\\CourseShop\\CourseShop\\CourseShopEntities.csproj",
       "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\HP\\Desktop\\dot-net-core\\samples\\CourseShop\\CourseShop\\obj\\",
       "projectStyle": "PackageReference",
