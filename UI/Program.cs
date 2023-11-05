@@ -9,6 +9,6 @@ optionBuilder.LogTo(Console.WriteLine);
 using CourseStoredDbContext ctx = new CourseStoredDbContext(optionBuilder.Options);
 
 CourseStoreRepository repository = new CourseStoreRepository(ctx);
-repository.PrintCourseAndTeacher();
+repository.PrintCourseAndTeacherExplicit();
 
 Console.ReadKey();

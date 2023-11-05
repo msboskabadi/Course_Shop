@@ -37,5 +37,26 @@ namespace DataAccessLayer
                 }
             }
         }
+
+        public void PrintCourseAndTeacherExplicit()
+        {
+            Console.WriteLine("".PadLeft(100, '*'));
+            var result = _courseStoreDbContext.Courses.ToList();
+            foreach (var course in result)
+            {
+                Console.WriteLine($"Course: {course.Name}");
+                if (true)
+                {
+                    _courseStoreDbContext.Entry(course).Collection(c => c.CourseTeachers).Load();
+
+                    foreach (var courseTeacher in course.CourseTeachers)
+                    {
+                        _courseStoreDbContext.Entry(courseTeacher).Reference(c => c.Teacher).Load();
+                        Console.WriteLine($"\t\t {courseTeacher.Teacher.FirstName}, {courseTeacher.Teacher.LastName}");
+                    }
+                }
+            }
+            Console.WriteLine("".PadLeft(100, '*'));
+        }
     }
 }
