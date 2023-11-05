@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using CourseShopEntities;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -55,6 +56,23 @@ namespace DataAccessLayer
                         Console.WriteLine($"\t\t {courseTeacher.Teacher.FirstName}, {courseTeacher.Teacher.LastName}");
                     }
                 }
+            }
+            Console.WriteLine("".PadLeft(100, '*'));
+        }
+
+        public void CourseShortInfoDtoSelectLoading()
+        {
+            Console.WriteLine("".PadLeft(100, '*'));
+            var result = _courseStoreDbContext.Courses.
+                Select(c => new CourseShortInfoDto
+                {
+                    Id = c.CourseId,
+                    Name = c.Name
+                });
+            foreach (var course in result)
+            {
+                Console.WriteLine($"Course: {course.Name}");
+                
             }
             Console.WriteLine("".PadLeft(100, '*'));
         }
