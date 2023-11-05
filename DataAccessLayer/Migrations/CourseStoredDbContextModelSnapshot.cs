@@ -92,7 +92,7 @@ namespace DataAccessLayer.Migrations
                     b.Property<int>("CourseId")
                         .HasColumnType("int");
 
-                    b.Property<int>("CourseTeacherId")
+                    b.Property<int>("SortOrder")
                         .HasColumnType("int");
 
                     b.Property<int>("TeacherId")

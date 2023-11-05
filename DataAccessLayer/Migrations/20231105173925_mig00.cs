@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace DataAccessLayer.Migrations
 {
     /// <inheritdoc />
-    public partial class init : Migration
+    public partial class mig00 : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -78,6 +78,27 @@ namespace DataAccessLayer.Migrations
                 });
 
             migrationBuilder.CreateTable(
+                name: "Dicount",
+                columns: table => new
+                {
+                    DicountId = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    CourseId = table.Column<int>(type: "int", nullable: false),
+                    Name = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    NewPrice = table.Column<int>(type: "int", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Dicount", x => x.DicountId);
+                    table.ForeignKey(
+                        name: "FK_Dicount_Courses_CourseId",
+                        column: x => x.CourseId,
+                        principalTable: "Courses",
+                        principalColumn: "CourseId",
+                        onDelete: ReferentialAction.Cascade);
+                });
+
+            migrationBuilder.CreateTable(
                 name: "CourseTag",
                 columns: table => new
                 {
@@ -107,9 +128,9 @@ namespace DataAccessLayer.Migrations
                 {
                     CourseTeachersId = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    CourseTeacherId = table.Column<int>(type: "int", nullable: false),
                     CourseId = table.Column<int>(type: "int", nullable: false),
-                    TeacherId = table.Column<int>(type: "int", nullable: false)
+                    TeacherId = table.Column<int>(type: "int", nullable: false),
+                    SortOrder = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -147,6 +168,12 @@ namespace DataAccessLayer.Migrations
                 name: "IX_CourseTeachers_TeacherId",
                 table: "CourseTeachers",
                 column: "TeacherId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Dicount_CourseId",
+                table: "Dicount",
+                column: "CourseId",
+                unique: true);
         }
 
         /// <inheritdoc />
@@ -162,13 +189,16 @@ namespace DataAccessLayer.Migrations
                 name: "CourseTeachers");
 
             migrationBuilder.DropTable(
+                name: "Dicount");
+
+            migrationBuilder.DropTable(
                 name: "Tags");
 
             migrationBuilder.DropTable(
-                name: "Courses");
+                name: "Teachers");
 
             migrationBuilder.DropTable(
-                name: "Teachers");
+                name: "Courses");
         }
     }
 }

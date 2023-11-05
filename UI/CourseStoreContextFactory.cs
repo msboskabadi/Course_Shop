@@ -14,7 +14,7 @@ namespace UI
         public CourseStoredDbContext CreateDbContext(string[] args)
         {
             var optionBuilder = new DbContextOptionsBuilder<CourseStoredDbContext>();
-            optionBuilder.UseSqlServer("Server=.; Database= CourseShopDb; User Id=sa; Password=0910173532; Encrypt=False");
+            optionBuilder.UseSqlServer("Server=.; Database= CourseShopEntities; User Id=sa; Password=0910173532; Encrypt=False");
 
             CourseStoredDbContext ctx = new CourseStoredDbContext(optionBuilder.Options);
 

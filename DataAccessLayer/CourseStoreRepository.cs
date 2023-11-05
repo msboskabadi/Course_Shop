@@ -18,7 +18,10 @@ namespace DataAccessLayer
 
         public void PrintCourseAndTeacher()
         {
-            var result = _courseStoreDbContext.Courses.Include(c => c.CourseTeachers).ThenInclude(c => c.Teacher).ToList();  
+            var result = _courseStoreDbContext.Courses
+                .Include(c => c.CourseTeachers.OrderByDescending(c => c.SortOrder)).ThenInclude(c => c.Teacher)
+                .Include(c => c.Tags)
+                .ToList();  
             foreach(var course in result)
             {
                 Console.WriteLine($"Course : {course.Name}");
@@ -26,6 +29,11 @@ namespace DataAccessLayer
                 foreach(var item in course.CourseTeachers)
                 {
                     Console.WriteLine($"\t\t {item.Teacher.FirstName}");
+                }
+
+                foreach(var item in course.Tags)
+                {
+                    Console.WriteLine($"Tags : {item.Name}");
                 }
             }
         }

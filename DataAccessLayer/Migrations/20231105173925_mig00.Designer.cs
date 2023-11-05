@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace DataAccessLayer.Migrations
 {
     [DbContext(typeof(CourseStoredDbContext))]
-    [Migration("20231103164154_init01")]
-    partial class init01
+    [Migration("20231105173925_mig00")]
+    partial class mig00
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -95,7 +95,7 @@ namespace DataAccessLayer.Migrations
                     b.Property<int>("CourseId")
                         .HasColumnType("int");
 
-                    b.Property<int>("CourseTeacherId")
+                    b.Property<int>("SortOrder")
                         .HasColumnType("int");
 
                     b.Property<int>("TeacherId")
